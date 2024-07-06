@@ -1,0 +1,108 @@
+/*========== var ==========*/
+:root{
+    /*========== Primary colors ==========*/
+    --organge: hsl(25, 97%, 53%);
+
+    /*========== Neutral colors ==========*/
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --dark-grey: hsl(215, 19%, 19%);
+    --dark-blue: hsl(215, 28%, 13%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    /*========== Font ==========*/
+    --normal-weight: 400;
+    --bold-weight: 700;
+    --very-bold-weight: 900;
+}
+/*========== reset ==========*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: "Overpass", sans-serif;
+}
+*::selection{
+    background-color: var(--organge);
+    color: var(--dark-blue);
+}
+/*========== global ==========*/
+body{
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--very-dark-blue);
+}
+/*========== Main ==========*/
+.main-contaienr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*========== Card ==========*/
+.card-content{
+    max-width: 375px;
+    background:var(--dark-blue);
+    color: var(--light-grey);
+    padding: 2rem;
+    border-radius: 1.8rem;
+}
+.card-icon{
+    width: 50px;
+    height: 50px;
+    display: grid;
+    margin-bottom: 1.5rem;
+    border-radius: 50%;
+    place-content: center;
+    background-color: var(--dark-grey);
+}
+.card-title{
+    color: var(--white);
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+}
+.card-options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.7rem 0;
+}
+.active-btn{
+    display: grid;
+    place-content: center;
+    width: 50px;
+    height: 50px;
+    border: none;
+    color: var(--light-grey);
+    border-radius: 50%;
+    background-color: var(--dark-grey);
+    cursor: pointer;
+}
+.active-btn:hover{
+    color: var(--dark-blue);
+    font-weight: var(--very-bold-weight);
+    background-color: var(--organge);
+}
+.active-btn:focus{
+    color: var(--dark-blue);
+    font-weight: var(--very-bold-weight);
+    background-color: var(--white);
+
+}
+.card-btn{
+    width: 100%;
+    padding: 1rem;
+    letter-spacing: .2rem;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--organge);
+    font-weight: var(--very-bold-weight);
+    font-size: 1rem;
+    color: var(--very-dark-blue);
+    cursor: pointer;
+}
+.card-btn:hover{
+    background-color: var(--white);
+}
