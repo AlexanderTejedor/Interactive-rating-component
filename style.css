@@ -129,5 +129,20 @@ body{
     line-height: 1.7;
 }
 .selection{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.selection p{
+    padding: .6rem 1rem;
+    border-radius: 50px;
+    color: var(--organge);
+    background-color: var(--dark-grey);
+}
+.error-message{
+    display: block;
+    margin-top: 1.5rem;
+    color: var(--organge);
+    text-align: center  ;
 }
