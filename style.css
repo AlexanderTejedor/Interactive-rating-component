@@ -63,6 +63,9 @@ body{
     font-size: 1.7rem;
     margin-bottom: 1.5rem;
 }
+.card-description{
+    line-height: 1.7;
+}
 .card-options{
     display: flex;
     justify-content: space-between;
@@ -105,4 +108,26 @@ body{
 }
 #card-btn:hover{
     background-color: var(--white);
+}
+
+/*========== Second card ==========*/
+.card-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+}
+.card-title-two{
+    text-align: center;
+    color: var(--white);
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+}
+.card-description-two{
+    text-align: center;
+    line-height: 1.7;
+}
+.selection{
+    
 }
